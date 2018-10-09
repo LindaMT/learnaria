@@ -1,6 +1,8 @@
 var ik_utils = ik_utils || {};
 
 ik_utils.keys =  {
+	'home': 36,
+	'end': 35,
 	'tab': 9,
 	'enter': 13,
 	'esc': 27,
