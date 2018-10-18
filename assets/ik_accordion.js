@@ -120,10 +120,10 @@
 			// Identify panel's visibility and button's expanded state
 			if (isVisible) {
 				$panel.attr({'aria-hidden': 'true'});
-				$currentButton.attr({'aria-expanded': 'false'});
+				$currentButton.attr({'aria-expanded': 'false'}).removeClass('expanded');
 			} else {
 				$panel.attr({'aria-hidden': 'false'});
-				$currentButton.attr({'aria-expanded': 'true'});
+				$currentButton.attr({'aria-expanded': 'true'}).addClass('expanded');
 			}
 			$panel.slideToggle({ duration: plugin.options.animationSpeed });
 		}
